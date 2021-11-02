@@ -58,7 +58,7 @@ let multi: number | boolean;
 multi = 10;
 multi = true;
 
-function add(num1: number, num2?: number): number {
+function add(num1: number, num2: number = 20): number {
     if (num2) {
         return num1 + num2;
     }
