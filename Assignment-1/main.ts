@@ -58,7 +58,7 @@ let multi: number | boolean;
 multi = 10;
 multi = true;
 
-function add(num1: number, num2: number = 20): number {
+function add(num1: number, num2?: number): number {
     if (num2) {
         return num1 + num2;
     }
@@ -118,3 +118,5 @@ let m1 = new manager("Aashish")
 console.log(m1.employeeName)
 m1.greet();
 m1.delegateWork();
+
+
